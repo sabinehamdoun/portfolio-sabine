@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Poppins'; /* Choose a name for your font */
+    src: url('../fonts/poppins/Poppins-Medium.ttf') format('ttf'), /* Replace with the correct path */
+         url('../fonts/poppins/Poppins-Medium.ttf') format('ttf');
+    /* Add more src lines for different font formats if necessary */
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bold; */
+    /* letter-spacing: 2px; */
+}
+
