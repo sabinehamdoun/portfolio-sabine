@@ -1,245 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
-    <div class="px-5 py-2 sticky-top bg-white ">
+    <div class="px-5 py-2 sticky-top bg-white">
       <nav class="navbar navbar-expand-md navbar-light">
-        <a href="/" class="navbar-brand d-flex align-items-center link-body-emphasis text-decoration-none gap-4">
-          <img src="./images/PicMe.jpg" alt="Sabine" width="50" height="45" class="border border-secondary rounded-circle"/>
-          <span class="text-uppercase" style="font-weight: 500;">Sabine Hamdoun</span>
+        <a
+          href="/"
+          class="navbar-brand d-flex align-items-center link-body-emphasis text-decoration-none gap-4"
+        >
+          <img
+            src="./images/PicMe.jpg"
+            alt="Sabine"
+            width="50"
+            height="45"
+            class="border border-secondary rounded-circle"
+          />
+          <span class="text-uppercase" style="font-weight: 500"
+            >Sabine Hamdoun</span
+          >
         </a>
-        
-        <!-- Add a toggle button for small screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
-        <!-- Define the menu items -->
-        <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
-          <div class=" d-flex justify-content-center"> 
-          <ul class="navbar-nav d-flex justify-content-center gap-md-5">
-              <li class="nav-item" style="font-weight: bold; font-size: 18px;"><a href="#home" class="nav-link active rounded-1" aria-current="page">Home</a></li>
-              <li class="nav-item" style="font-weight: bold; font-size: 18px;"><a href="#projects" class="nav-link text-dark">Projects</a></li>
-              <li class="nav-item" style="font-weight: bold; font-size: 18px;"><a href="#skills" class="nav-link text-dark">Skills</a></li> 
-          </ul>
+
+        <div
+          class="collapse navbar-collapse justify-content-md-end"
+          id="navbarNav"
+        >
+          <div class="d-flex justify-content-center">
+            <ul class="navbar-nav d-flex justify-content-center gap-md-5">
+              <li class="nav-item" style="font-weight: bold; font-size: 18px">
+                <a
+                  href="#home"
+                  class="nav-link active rounded-1"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item" style="font-weight: bold; font-size: 18px">
+                <a href="#projects" class="nav-link text-dark">Projects</a>
+              </li>
+              <li class="nav-item" style="font-weight: bold; font-size: 18px">
+                <a href="#skills" class="nav-link text-dark">Skills</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
       </nav>
     </div>
-    
-    
 
     <!-- Intro -->
-    <div class="px-lg-5 mx-5 mt-5 pb-5 d-flex justify-content-center bg-gradient-secondary overflow-hidden" id="home">
+    <div
+      class="px-lg-5 mx-5 mt-5 pb-5 d-flex justify-content-center bg-gradient-secondary overflow-hidden"
+      id="home"
+    >
       <div class="row align-items-center justify-content-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-              <img src="./images/front2.avif" alt="Sabine" class="img-fluid" loading="lazy">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/front2.avif"
+            alt="Sabine"
+            class="img-fluid"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6 px-5">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-5">
+            I'm Sabine
+          </h1>
+          <p class="lead mb-4">
+            I’m a front-end developer with a lot of experience who loves
+            creating user-friendly websites, and I’m really good at turning
+            design ideas into functional code using HTML, CSS, JavaScript, and
+            modern frameworks to make sure clients are happy with the final
+            product.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#skills"
+              ><button
+                type="button"
+                class="btn btn-primary btn-lg px-4 me-md-2 rounded-1"
+              >
+                View Skills
+              </button></a
+            >
           </div>
-          <div class="col-lg-6 px-5">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-5">I'm Sabine</h1>
-              <p class="lead mb-4">I’m a front-end developer with a lot of experience who loves creating user-friendly websites, and I’m really good at turning design ideas into functional code using HTML, CSS, JavaScript, and modern frameworks to make sure clients are happy with the final product.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="#skills"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 rounded-1">View Skills </button></a>
-              </div>
-          </div>
+        </div>
       </div>
-  </div>
-  
+    </div>
 
     <!-- Projects -->
     <div class="px-lg-5 mx-5 py-5 overflow-hidden" id="projects">
-        <h2 class="pb-2 w-25 text-center mx-auto fw-bold fs-1">Projects</h2>
-        <hr style="border: 3px solid rgb(2, 2, 255); width: 8%; margin: 0px auto 50px auto;"/>
-        <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-5 pb-5 h-75" >
-          <div class="col mb-5 mb-lg-0" style="height: 400px;">
-            <div class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/ecommerce.jpg'); background-size: 100% 100%;">
-            </div>
+      <h2 class="pb-2 w-25 text-center mx-auto fw-bold fs-1">Projects</h2>
+      <hr
+        style="
+          border: 3px solid rgb(2, 2, 255);
+          width: 8%;
+          margin: 0px auto 50px auto;
+        "
+      />
+      <div
+        class="row row-cols-1 row-cols-lg-2 align-items-stretch g-5 pb-5 h-75"
+      >
+         
+
+        <div class="col mb-lg-0" style="height: 400px">
+            <div
+              class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./images/pixel.jpg');
+                background-size: 100% 100%;
+                object-fit: cover;
+              "
+            ></div>
             <div class="d-flex justify-content-center mt-4 w-100">
-                <button type="button" class="btn w-100 btn-primary btn-md rounded-1 text-black" style="font-weight: bold;">
-                    <img src="./images/eye.svg" alt="eye" height="20" width="20" style="margin-right: 5px; margin-bottom: 2px;"/>
-                    Coming Soon ...
-                </button>
+              <a
+                href="https://gorgeous-stroopwafel-ddd071.netlify.app"
+                class="btn w-100 btn-primary btn-md rounded-1 text-black"
+                style="font-weight: bold"
+                target="_blank"
+              >
+                <img
+                  src="./images/eye.svg"
+                  alt="eye"
+                  height="20"
+                  width="20"
+                  style="margin-right: 5px; margin-bottom: 2px"
+                />
+                View
+              </a>
             </div>
           </div>
-        
-    
-          <div class="col mb-5 mb-lg-0" style="height: 400px;">
-            <div class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/portfolio.jpg'); background-size: 100% 100%;">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <ul class="d-flex list-unstyled mt-auto"> 
-                  <li class="d-flex align-items-center me-3">
-                    <medium class="text-black fw-bold"> 3d Portfolio </medium>
-                  </li> 
-                </ul>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center mt-4 w-100">
-                <button type="button" class="btn w-100 btn-primary btn-md rounded-1 text-black" style="font-weight: bold;">
-                    <img src="./images/eye.svg" alt="eye" height="20" width="20" style="margin-right: 5px; margin-bottom: 2px;"/>
-                    Coming Soon ...
-                </button>
-            </div>
-          </div> 
 
-          <div class="col mb-lg-0" style="height: 400px;">
-            <div class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/jobs.jpeg'); background-size: 100% 100%; object-fit: cover;">
+        <div class="col mb-5 mb-lg-0" style="height: 400px">
+          <div
+            class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./images/portfolio.jpg');
+              background-size: 100% 100%;
+            "
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                  <medium class="text-black fw-bold"> 3d Portfolio </medium>
+                </li>
+              </ul>
             </div>
-            <div class="d-flex justify-content-center mt-4 w-100">
-                <a href="https://main--splendorous-malasada-b1e307.netlify.app/" class="btn w-100 btn-primary btn-md rounded-1 text-black" style="font-weight: bold;" target="_blank">
-                    <img src="./images/eye.svg" alt="eye" height="20" width="20" style="margin-right: 5px; margin-bottom: 2px;"/>
-                    View
-                </a>
-            </div> 
-          </div> 
-
-          <div class="col mb-lg-0" style="height: 400px;">
-            <div class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/dummy.jpeg'); background-size: 100% 100%; object-fit: cover;">
-            </div>
-            <div class="d-flex justify-content-center mt-4 w-100">
-                <a href="https://benevolent-crostata-9256d1.netlify.app/home" class="btn w-100 btn-primary btn-md rounded-1 text-black" style="font-weight: bold;" target="_blank">
-                    <img src="./images/eye.svg" alt="eye" height="20" width="20" style="margin-right: 5px; margin-bottom: 2px;"/>
-                    View
-                </a>
-            </div> 
-          </div> 
+          </div>
+          <div class="d-flex justify-content-center mt-4 w-100">
+            <a
+              href="https://beautiful-lokum-57a7c6.netlify.app/"
+              class="btn w-100 btn-primary btn-md rounded-1 text-black"
+              style="font-weight: bold"
+              target="_blank"
+            >
+              <img
+                src="./images/eye.svg"
+                alt="eye"
+                height="20"
+                width="20"
+                style="margin-right: 5px; margin-bottom: 2px"
+              />
+              View
+            </a>
+          </div>
         </div>
+
+        <div class="col mb-lg-0" style="height: 400px">
+          <div
+            class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./images/jobs.jpeg');
+              background-size: 100% 100%;
+              object-fit: cover;
+            "
+          ></div>
+          <div class="d-flex justify-content-center mt-4 w-100">
+            <a
+              href="https://main--splendorous-malasada-b1e307.netlify.app/"
+              class="btn w-100 btn-primary btn-md rounded-1 text-black"
+              style="font-weight: bold"
+              target="_blank"
+            >
+              <img
+                src="./images/eye.svg"
+                alt="eye"
+                height="20"
+                width="20"
+                style="margin-right: 5px; margin-bottom: 2px"
+              />
+              View
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-lg-0" style="height: 400px">
+          <div
+            class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./images/dummy.jpeg');
+              background-size: 100% 100%;
+              object-fit: cover;
+            "
+          ></div>
+          <div class="d-flex justify-content-center mt-4 w-100">
+            <a
+              href="https://benevolent-crostata-9256d1.netlify.app/home"
+              class="btn w-100 btn-primary btn-md rounded-1 text-black"
+              style="font-weight: bold"
+              target="_blank"
+            >
+              <img
+                src="./images/eye.svg"
+                alt="eye"
+                height="20"
+                width="20"
+                style="margin-right: 5px; margin-bottom: 2px"
+              />
+              View
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5 mb-lg-0" style="height: 400px">
+            <div
+              class="card card-cover h-75 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('./images/ecommerce.jpg');
+                background-size: 100% 100%;
+              "
+            ></div>
+            <div class="d-flex justify-content-center mt-4 w-100">
+              <button
+                type="button"
+                class="btn w-100 btn-primary btn-md rounded-1 text-black"
+                style="font-weight: bold"
+              >
+                <img
+                  src="./images/eye.svg"
+                  alt="eye"
+                  height="20"
+                  width="20"
+                  style="margin-right: 5px; margin-bottom: 2px"
+                />
+                Coming Soon ...
+              </button>
+            </div>
+          </div>
+      </div>
     </div>
 
     <!-- Skills -->
     <div class="px-lg-5 mx-5 py-5" id="skills">
-        <h2 class="pb-2 w-25 text-center mx-auto fw-bold fs-1">Skills</h2>
-        <hr style="border: 3px solid rgb(2, 2, 255); width: 8%; margin: 0px auto 50px auto;"/>
-    
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pb-5">
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/HTML5_logo_and_wordmark.svg.png" height="50"/>
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="background-color: orangered;"></div>
-                </div>
-            </div>
-            
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/CSS3_logo_and_wordmark.svg.png"  height="50"/>
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/Unofficial_JavaScript_logo_2.svg.png"  height="50"/>
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75 bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/node-removebg-preview.png" height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-50 bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/React-icon.svg.png"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75 bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/AngularJS-Shield.svg"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/logo.png"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/Bootstrap_logo.svg.png"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="background-color: rgba(116, 59, 190, 0.761);"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/java-programming-language-icon.webp"  height="50"/>
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="background-color: rgb(29, 122, 164);"></div>
-            </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/mysql-logo.svg"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/free-mongodb-3629020-3030245.webp"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-50 bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/github.svg.png"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75 bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center mb-4">
-                <img src="./images/Tailwind_CSS_Logo.svg.png"  height="50"/> 
-                <div class="progress mt-4" style="height: 5px; width: 75%;">
-                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="background-color: rgb(85, 199, 252);"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <h2 class="pb-2 w-25 text-center mx-auto fw-bold fs-1">Skills</h2>
+      <hr
+        style="
+          border: 3px solid rgb(2, 2, 255);
+          width: 8%;
+          margin: 0px auto 50px auto;
+        "
+      />
 
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pb-5 box"
+      >
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/HTML5_logo_and_wordmark.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress100"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="background-color: orangered"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/CSS3_logo_and_wordmark.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress100"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img
+            src="./images/Unofficial_JavaScript_logo_2.svg.png"
+            height="50"
+          />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0 bg-warning"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/node-removebg-preview.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0 bg-success progress-bar-animation"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/React-icon.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0 bg-info"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/AngularJS-Shield.svg" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress25"
+              class="progress-bar w-0 bg-danger"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/logo.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress100"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/Bootstrap_logo.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="background-color: rgba(116, 59, 190, 0.761)"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/java-programming-language-icon.webp" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress25"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="background-color: rgb(29, 122, 164)"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/mysql-logo.svg" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/free-mongodb-3629020-3030245.webp" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress50"
+              class="progress-bar w-0 bg-success"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/github.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0 bg-secondary"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center mb-4">
+          <img src="./images/Tailwind_CSS_Logo.svg.png" height="50" />
+          <div class="progress mt-4" style="height: 5px; width: 75%">
+            <div
+              id="progress75"
+              class="progress-bar w-0"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="background-color: rgb(85, 199, 252)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
-      
-    <div style="background-color: #212121; padding: 5px 70px;">
-        <footer class="py-3 mt-4 ">
-            <div class="d-flex justify-content-center border-bottom"> 
-                <div class=" text-white mb-3 mb-md-3 me-md-auto link-body-emphasis text-decoration-none">
-                    <h2 class="text-nowrap mb-3 fw-bold"> Sabine Hamdoun</h2>
-                    <p style="line-height: 1.5;"> A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product </p>
-                </div>
-            </div>
 
-            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 "> 
-                <div class="d-flex gap-3 col-md-6">
-                    <div style="background-color: white; border-radius: 50px; padding: 4px;"> 
-                        <img src="./images/facebook.png" height="20"/>
-                    </div>
-                <div style="background-color: white; border-radius: 3px; padding: 4px;"> 
-                    <img src="./images/free-linkedin-icon-112-thumb.png" height="20"/>
-                </div>
-            </div>
-
-            <ul class="nav col-md-6 justify-content-end d-none d-sm-flex ">
-                <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">Home</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projects</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link px-2 text-white">Skills</a></li> 
-            </ul>
+    <div style="background-color: #212121; padding: 5px 70px">
+      <footer class="py-3 mt-4">
+        <div class="d-flex justify-content-center border-bottom">
+          <div
+            class="text-white mb-3 mb-md-3 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <h2 class="text-nowrap mb-3 fw-bold">Sabine Hamdoun</h2>
+            <p style="line-height: 1.5">
+              A Frontend focused Web Developer building the Frontend of Websites
+              and Web Applications that leads to the success of the overall
+              product
+            </p>
+          </div>
         </div>
-        </footer>
+
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4"
+        >
+          <div class="d-flex gap-3 col-md-6">
+            <div
+              style="background-color: white; border-radius: 50px; padding: 4px"
+            >
+              <img src="./images/facebook.png" height="20" />
+            </div>
+            <div
+              style="background-color: white; border-radius: 3px; padding: 4px"
+            >
+              <img
+                src="./images/free-linkedin-icon-112-thumb.png"
+                height="20"
+              />
+            </div>
+          </div>
+
+          <ul class="nav col-md-6 justify-content-end d-none d-sm-flex">
+            <li class="nav-item">
+              <a href="#home" class="nav-link px-2 text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link px-2 text-white">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link px-2 text-white">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.to("#progress100", {
+        width: "100%",
+        ease: "power2.out",
+      });
+
+      gsap.to("#progress75", {
+        width: "75%",
+        ease: "power2.out",
+      });
+
+      gsap.to("#progress50", {
+        width: "50%",
+        ease: "power2.out",
+      });
+
+      gsap.to("#progress25", {
+        width: "25%",
+        ease: "power2.out",
+      });
+    </script>
+  </body>
 </html>
